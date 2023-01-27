@@ -6,7 +6,7 @@ This was made for educational & learning purposes only. I do not recommend using
 
 Download the following resources.
 - [Node.js](https://nodejs.org/en/download/)
-- [Words.json](https://raw.githubusercontent.com/lorenbrichter/Words/master/Words/en.txt) Download this and put it in the folder with the rest of the files.
+- [Words.json](https://raw.githubusercontent.com/lorenbrichter/Words/master/Words/en.txt) Download this, change the name to "words.json" and put it in the folder with the rest of the files.
 
 <h2>📮 How to use 📮</h2>
 
