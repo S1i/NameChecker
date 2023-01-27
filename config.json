@@ -1,0 +1,17 @@
+{
+	"github": {
+		"enabled": true,
+		"scanWords": false,
+		"scanString": true,
+		"stringLowers": true,
+		"stringUppers": false,
+		"stringNumbers": false,
+		"stringSpecials": false,
+		"stringLength": 3,
+		"cooldownTime": 1,
+		"words": {
+			"available": {},
+			"taken": {}
+		}
+	}
+}
