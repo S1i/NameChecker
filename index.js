@@ -2,10 +2,10 @@ const fs = require("fs")
 const fetch = require("node-fetch")
 const chalk = require("chalk")
 const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+const config = JSON.parse(fs.readFileSync("config.json", "utf8"))
 function createString(length,platform) {
     var result = '';
     var characters = '';
-    let config = JSON.parse(fs.readFileSync("config.json", "utf8"))
     if (config[platform]["stringLowers"]) {characters += "abcdefghijklmnopqrstuvwxyz"}
     if (config[platform]["stringUppers"]) {characters += "ABCDEFGHIJKLMNOPQRSTUVWXYZ"}
     if (config[platform]["stringNumbers"]) {characters += "0123456789"}
