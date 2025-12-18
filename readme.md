@@ -1,5 +1,5 @@
 <h1>🤖 Username Checker 🤖</h1>
-<h2>🛑 This was made 2 years ago, I do not know if it still works. 🛑</h2>
+<h2>🛑 I origionally made this 2 years ago, updates are rare. 🛑</h2>
 
 This was made for educational & learning purposes only. I do not recommend using this to get a username.
 
