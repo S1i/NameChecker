@@ -4,7 +4,7 @@ const chalk = require("chalk")
 const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
 function createString(length,platform) {
     var result = '';
-    var characters
+    var characters = '';
     let config = JSON.parse(fs.readFileSync("config.json", "utf8"))
     if (config[platform]["stringLowers"]) {characters += "abcdefghijklmnopqrstuvwxyz"}
     if (config[platform]["stringUppers"]) {characters += "ABCDEFGHIJKLMNOPQRSTUVWXYZ"}
@@ -17,7 +17,7 @@ function createString(length,platform) {
     return result;
 }
 function checkWord(platform,word) {
-    let words = JSON.parse(fs.readFileSync("config.json", "utf8"))[platform]["words"]
+    let words = config[platform]["words"]
     if (words["available"][word] || words["taken"][word]) {
         return false
     } else {
@@ -25,9 +25,8 @@ function checkWord(platform,word) {
     }
 }
 function storeWord(platform,word,type) {
-    let words = JSON.parse(fs.readFileSync("config.json", "utf8"))
-    words[platform]["words"][type][word] = true
-    fs.writeFileSync(`config.json`, JSON.stringify(words, null, "\t"))
+    config[platform]["words"][type][word] = true
+    fs.writeFileSync(`config.json`, JSON.stringify(config, null, "\t"))
 }
 const functions = {
     "github": async function(username) {
