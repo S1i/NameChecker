@@ -1,6 +1,7 @@
 {
 	"github": {
 		"enabled": true,
+		"logTaken": false,
 		"scanWords": false,
 		"scanString": true,
 		"stringLowers": true,
@@ -8,10 +9,6 @@
 		"stringNumbers": false,
 		"stringSpecials": false,
 		"stringLength": 3,
-		"cooldownTime": 1,
-		"words": {
-			"available": {},
-			"taken": {}
-		}
+		"cooldownTime": 1
 	}
 }
